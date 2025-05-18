@@ -10,11 +10,12 @@ function App() {
   return (
     <div>
       <BlogNavigation />
-      {/* <div className="flex justify-center">
-        <div className="mx-auto p-6">App</div>
-      </div> */}
-      <div className="w-[30%]">
-        <BlogPeopleToFollow />
+      <div className="flex justify-center">
+        {/* <div className="mx-auto p-6">App</div>
+      </div>  */}
+        <div className="w-[30%]">
+          <BlogPeopleToFollow />
+        </div>
       </div>
     </div>
   );
