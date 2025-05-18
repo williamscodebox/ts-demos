@@ -77,6 +77,12 @@ function Profile() {
             onChange={handleProfileChange}
           />
         </button>
+        {/* Profile Details */}
+        <div className="ml-4">
+          <h1 className="text-3xl font-bold">John Doe</h1>
+          <p className="text-gray-600">Software Engineer</p>
+          <p className="text-gray-600">Location: San Francisco, CA</p>
+        </div>
       </div>
     </div>
   );
