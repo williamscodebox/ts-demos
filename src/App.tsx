@@ -11,7 +11,7 @@ function App() {
         <Sidebar />
       </div>
       <Profile />
-      <div className="text-2xl ml-25">
+      <div className="text-2xl ml-25 pt-8">
         App with style from tailwinds css
         <FetchTodo />
         <div>
