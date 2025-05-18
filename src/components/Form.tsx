@@ -6,8 +6,8 @@ function Form() {
   };
   return (
     <form onSubmit={handleSubmit}>
-      <div className="flex flex-col items-center">
-        <div className="border-1 rounded-2xl p-3 pt-5 pb-3 bg-gradient-to-r from-pink-100 via-red-50 to-purple-200 w-xxs">
+      <div className="flex flex-col items-end mr-10">
+        <div className="border-3 rounded-2xl p-3 pt-5 pb-3 bg-gradient-to-r from-pink-100 via-red-50 to-purple-200 w-60">
           <div className="flex flex-col justify-between -mt-2">
             <label htmlFor="name">Name:</label>
             <input
@@ -35,9 +35,9 @@ function Form() {
               name="password"
             />
           </div>
-          <div className="mt-3 mr-5 pt-1 flex justify-end ">
+          <div className="mt-3 pt-1 flex justify-end ">
             <button
-              className="border-1 rounded-xl p-1.5 pt-0.5 pb-1 text-xl bg-pink-200 text-black hover:bg-pink-300"
+              className="border-2 rounded-xl p-1.5 pt-0.5 pb-1 text-xl bg-pink-200 text-black hover:bg-pink-300"
               type="submit"
             >
               Submit
