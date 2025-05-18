@@ -1,4 +1,5 @@
 import { FaHome, FaSearch, FaUser } from "react-icons/fa";
+import { IoMdSettings } from "react-icons/io";
 
 function Sidebar() {
   return (
@@ -19,6 +20,12 @@ function Sidebar() {
             <div className="flex items-center">
               <FaSearch className="mr-2 mb-3" />
             </div>
+          </li>
+        </div>
+        <div className="bottom">
+          <li>
+            <IoMdSettings size={18} />
+            <FaUser className="mt-5" size={18} />
           </li>
         </div>
       </ul>

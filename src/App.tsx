@@ -1,6 +1,7 @@
 import "./App.css";
 import FetchTodo from "./components/FetchTodo";
 import Form from "./components/Form";
+import Profile from "./components/Profile";
 import Sidebar from "./components/Sidebar";
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
       <div>
         <Sidebar />
       </div>
+      <Profile />
       <div className="text-2xl ml-25">
         App with style from tailwinds css
         <FetchTodo />
