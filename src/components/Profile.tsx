@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { FaCamera } from "react-icons/fa";
+import { FaCamera, FaPlus } from "react-icons/fa";
+import Tabs from "./Tabs";
 
 function Profile() {
   const [bannerUrl, setBannerUrl] = useState<string>(
@@ -82,8 +83,13 @@ function Profile() {
           <h1 className="text-3xl font-bold">John Doe</h1>
           <p className="text-gray-600">Software Engineer</p>
           <p className="text-gray-600">Location: San Francisco, CA</p>
+          <button className="flex gap-1 mt-4 bg-blue-600 text-white font-bold py-1 px-3 pt-0.5 pl-2 rounded hover:bg-blue-700">
+            <FaPlus className="mt-1" />
+            Subscribe
+          </button>
         </div>
       </div>
+      <Tabs />
     </div>
   );
 }
