@@ -3,6 +3,8 @@ import type { Blog } from "./types/types";
 import BlogNavigation from "./components/BlogNavigation";
 import "./App.css";
 import BlogPeopleToFollow from "./components/BlogPeopleToFollow";
+import BlogTrendList from "./components/BlogTrendList";
+import BlogTopTopics from "./components/BlogTopTopics";
 
 function App() {
   const [isModalOpen, setModalOpen] = useState(false);
@@ -15,6 +17,8 @@ function App() {
       </div>  */}
         <div className="w-[30%]">
           <BlogPeopleToFollow />
+          <BlogTrendList />
+          <BlogTopTopics />
         </div>
       </div>
     </div>
