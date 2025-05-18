@@ -1,6 +1,9 @@
 import { FaHome, FaInfoCircle, FaPhone } from "react-icons/fa";
 import { GoProjectSymlink } from "react-icons/go";
 import { SiCoursera } from "react-icons/si";
+import Contact from "../components/Contact";
+import About from "../components/About";
+import Card from "../components/Card";
 
 const tabs = [
   {
@@ -9,14 +12,14 @@ const tabs = [
     label: "Home",
     content: (
       <div className="flex flex-wrap">
-        {/* {Array.from({ length: 6 }).map((_, index) => (
-          // <Card
-          //   key={index}
-          //   title="Amazing Card"
-          //   description="This is a cool-looking card component using React and Tailwind CSS."
-          //   image="https://via.placeholder.com/400x300"
-          // />
-        ))} */}
+        {Array.from({ length: 6 }).map((_, index) => (
+          <Card
+            key={index}
+            title="Amazing Card"
+            description="This is a cool-looking card component using React and Tailwind CSS."
+            image="https://placehold.co/400x300"
+          />
+        ))}
       </div>
     ),
   },
@@ -24,7 +27,7 @@ const tabs = [
     id: "about",
     icon: <FaInfoCircle />,
     label: "About",
-    // content: <About />,
+    content: <About />,
   },
   {
     id: "projects",
@@ -32,14 +35,14 @@ const tabs = [
     label: "Projects",
     content: (
       <div className="flex flex-wrap">
-        {/* {Array.from({ length: 6 }).map((_, index) => (
-          // <Card
-          //   key={index}
-          //   title="Amazing Card"
-          //   description="This is a cool-looking card component using React and Tailwind CSS."
-          //   image="https://via.placeholder.com/400x300"
-          // />
-        ))} */}
+        {Array.from({ length: 6 }).map((_, index) => (
+          <Card
+            key={index}
+            title="Amazing Card"
+            description="This is a cool-looking card component using React and Tailwind CSS."
+            image="https://placehold.co/400x300"
+          />
+        ))}
       </div>
     ),
   },
@@ -49,14 +52,14 @@ const tabs = [
     label: "Courses",
     content: (
       <div className="flex flex-wrap">
-        {/* {Array.from({ length: 6 }).map((_, index) => (
-          // <Card
-          //   key={index}
-          //   title="Amazing Card"
-          //   description="This is a cool-looking card component using React and Tailwind CSS."
-          //   image="https://via.placeholder.com/400x300"
-          // />
-        ))} */}
+        {Array.from({ length: 6 }).map((_, index) => (
+          <Card
+            key={index}
+            title="Amazing Card"
+            description="This is a cool-looking card component using React and Tailwind CSS."
+            image="https://placehold.co/400x300"
+          />
+        ))}
       </div>
     ),
   },
@@ -64,7 +67,7 @@ const tabs = [
     id: "contact",
     icon: <FaPhone />,
     label: "Contact",
-    // content: <Contact />,
+    content: <Contact />,
   },
 ];
 

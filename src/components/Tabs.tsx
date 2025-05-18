@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import tabs from "../data/tabs.tsx";
 
 const data = tabs;
