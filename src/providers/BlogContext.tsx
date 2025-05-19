@@ -34,6 +34,9 @@ export const BlogProvider: React.FC<{ children: React.ReactNode }> = ({
   );
 };
 
+// useBlogs hook to access the BlogContext
+// This hook can be used in any component that is a child of BlogProvider
+
 export const useBlogs = () => {
   const context = useContext(BlogContext);
   if (!context) {

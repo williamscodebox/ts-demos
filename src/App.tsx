@@ -5,22 +5,49 @@ import "./App.css";
 import BlogPeopleToFollow from "./components/BlogPeopleToFollow";
 import BlogTrendList from "./components/BlogTrendList";
 import BlogTopTopics from "./components/BlogTopTopics";
+import { BlogProvider } from "./providers/BlogContext";
+import { IoMdAddCircle } from "react-icons/io";
+import BlogModal from "./components/BlogModal";
+import BlogForm from "./components/BlogForm";
+import ArticleList from "./components/BlogArticleList";
 
 function App() {
   const [isModalOpen, setModalOpen] = useState(false);
   const [editingBlog, setEditingBlog] = useState<Blog | null>(null);
   return (
     <div>
-      <BlogNavigation />
-      <div className="flex justify-center">
-        {/* <div className="mx-auto p-6">App</div>
-      </div>  */}
-        <div className="w-[30%]">
-          <BlogPeopleToFollow />
-          <BlogTrendList />
-          <BlogTopTopics />
+      <BlogProvider>
+        <BlogNavigation />
+        <div className="flex justify-center">
+          <div className="mx-auto p-6">
+            <div>
+              <button
+                // onClick={openModalForNewBlog}
+                className="ml-[7rem] bg-black flex justify-center items-center text-white px-4 py-2 rounded mb-4"
+              >
+                Add New Blog <IoMdAddCircle className="ml-[.5rem]" />
+              </button>
+
+              <ArticleList
+              // onEdit={openModalForEdit}
+              />
+              {isModalOpen && (
+                <BlogModal onClose={() => setModalOpen(false)}>
+                  <BlogForm
+                  // existingBlog={editingBlog}
+                  // onClose={() => setModalOpen(false)}
+                  />
+                </BlogModal>
+              )}
+            </div>
+          </div>
+          <div className="w-[30%]">
+            <BlogPeopleToFollow />
+            <BlogTrendList />
+            <BlogTopTopics />
+          </div>
         </div>
-      </div>
+      </BlogProvider>
     </div>
   );
 }
