@@ -1,12 +1,7 @@
 import "./App.css";
-import Dashboard from "./eCommerceComponents/Dashboard";
 
 function App() {
-  return (
-    <div>
-      <Dashboard />
-    </div>
-  );
+  return <div>App</div>;
 }
 
 export default App;
