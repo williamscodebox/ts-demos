@@ -9,7 +9,7 @@ import { BlogProvider } from "./providers/BlogContext";
 import { IoMdAddCircle } from "react-icons/io";
 import BlogModal from "./components/BlogModal";
 import BlogForm from "./components/BlogForm";
-import ArticleList from "./components/BlogArticleList";
+import BlogArticleList from "./components/BlogArticleList";
 
 function App() {
   const [isModalOpen, setModalOpen] = useState(false);
@@ -28,7 +28,7 @@ function App() {
                 Add New Blog <IoMdAddCircle className="ml-[.5rem]" />
               </button>
 
-              <ArticleList
+              <BlogArticleList
               // onEdit={openModalForEdit}
               />
               {isModalOpen && (
