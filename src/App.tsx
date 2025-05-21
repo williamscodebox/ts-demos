@@ -1,6 +1,7 @@
 import "./App.css";
 import { motion } from "motion/react";
 import PulsingBtn from "./FramerMotionProjectUIComponents/PulsingBtn";
+import FlippingCard from "./FramerMotionProjectUIComponents/FlippingCard";
 
 function App() {
   return (
@@ -31,7 +32,8 @@ function App() {
         ></motion.div>
         <div className="btn-text">Click Me</div>
       </div> */}
-      <PulsingBtn />
+      {/* <PulsingBtn /> */}
+      <FlippingCard />
     </div>
   );
 }
