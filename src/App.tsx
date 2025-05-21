@@ -1,6 +1,7 @@
 import "./App.css";
-import { motion } from "motion/react";
-import PulsingBtn from "./FramerMotionProjectUIComponents/PulsingBtn";
+import Flip from "./FramerMotionProjectUIComponents/Flip";
+// import { motion } from "motion/react";
+// import PulsingBtn from "./FramerMotionProjectUIComponents/PulsingBtn";
 import FlippingCard from "./FramerMotionProjectUIComponents/FlippingCard";
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
       </div> */}
       {/* <PulsingBtn /> */}
       <FlippingCard />
+      <Flip />
     </div>
   );
 }

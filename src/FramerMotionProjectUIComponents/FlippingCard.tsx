@@ -1,4 +1,4 @@
-import { animate, motion } from "motion/react";
+import { motion } from "motion/react";
 import { useState } from "react";
 
 const cardVariants = {
@@ -16,11 +16,12 @@ function FlippingCard() {
 
   return (
     <motion.div
-      className="transform-3d perspective-1000"
+      className="perspective-1000"
       onClick={() => setIsFlipped(!isFlipped)}
     >
       <motion.div
-        className="w-64 h-40 bg-white rounded-lg shadow-lg overflow-hidden transform-3d"
+        className="w-64 h-40 bg-transparent rounded-lg shadow-lg overflow-hidden transform-3d ;"
+        drag
         variants={cardVariants}
         initial="front"
         animate={isFlipped ? "back" : "front"}
@@ -29,9 +30,7 @@ function FlippingCard() {
         <div className="absolute inset-0 bg-white flex items-center justify-center text-xl font-bold ">
           Front Side
         </div>
-        <div className="absolute inset-0 bg-blue-500 flex items-center justify-center text-xl font-bold">
-          Back Side
-        </div>
+        <div className=" test">Back Side</div>
       </motion.div>
     </motion.div>
   );
