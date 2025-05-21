@@ -1,10 +1,11 @@
 import "./App.css";
 import { motion } from "motion/react";
+import PulsingBtn from "./FramerMotionProjectUIComponents/PulsingBtn";
 
 function App() {
   return (
     <div>
-      <div className="box-start">
+      {/* <div className="box-start">
         App
         <motion.div
           className="box"
@@ -29,7 +30,8 @@ function App() {
           }}
         ></motion.div>
         <div className="btn-text">Click Me</div>
-      </div>
+      </div> */}
+      <PulsingBtn />
     </div>
   );
 }
